@@ -1,0 +1,4 @@
+chose to model a ComputerSystem and a CPU because the CHAISE simulator is all about how different hardware components interact. The ComputerSystem is the complex object because it "has-a" CPU. I included overloaded constructors so a user can either start a blank build with a default CPU or port in a specific high-end processor. The overclock and upgrade overloads add flexibility for modifying the system later.
+
+Structure of .toString() and .equals():
+My .toString() methods are built to be descriptive; the ComputerSystem output includes its own build name and then pulls the core details from the CPU object. For .equals(), I made sure the logic is "semantic." Two systems are only equal if their build names match and their processors are identical. This mirrors the "Semantic Equality" concept shown in the CHAISE tool's component comparison tab.
